@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "fd3e92a6-d98f-4c63-9e0a-8ab69558bf30",
+		"name": "Queue Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19726441"
+	},
+	"item": [
+		{
+			"name": "Add Two Numbers (25 sec delay)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"x\":3,\r\n    \"y\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getstatus/2b576931-ef86-4ed0-8ae8-b45296867590",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getstatus",
+						"2b576931-ef86-4ed0-8ae8-b45296867590"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task Result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/getdone/2b576931-ef86-4ed0-8ae8-b45296867590",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getdone",
+						"2b576931-ef86-4ed0-8ae8-b45296867590"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
